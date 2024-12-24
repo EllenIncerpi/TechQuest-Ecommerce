@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechQuest Ecommerce</title>
+    <link rel="icon" type="image/x-icon" href="images/logo/logo.png">
     <link rel="stylesheet" href="/styles/styles.css" />
 </head>
 <body>
-    <div class="navbar">
-        <div class="header-inner-content" >
+    <div class="navbar show-menu">
+        <div class="header-inner-content ">
         <h1 class="logo">Tech<span>Quest</span></h1> 
         <nav>
             <ul>
@@ -23,8 +24,8 @@
             <img src="/images/cart.png" />
             <img src="/images/menu.png" class="menu-botton"/>
         </div>
+      </div>
     </div>
-    <div>
 
     <header>
         <div class="header-inner-content">
@@ -43,5 +44,62 @@
             </div>
          </div>
     </header> 
+
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content"> 
+                <div class="cols cols-3"> 
+                    <img src="/images/products/product-1.png" alt="" >
+                    <img src="/images/products/product-2.png" alt="" >
+                    <img src="/images/products/product-3.png" alt="" >
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="page-inner-content">
+                <h3 class="section-title">Produtos Selecionados</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="/images/products/product-4.png" alt="" />
+                        <p class="product-name">Combo Gamer</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                        <p class=" product-price"> 120,00<span> BR</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="/images/products/product-5.png" alt="" />
+                        <p class="product-name">Placa de Vídeo, MSI RTX 3050, Ventus XS</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class=" product-price"> 1,500.00<span> BR</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="/images/products/product-6.png" alt="" />
+                        <p class="product-name">Controle Sony DualSense PS5, Sem Fio, Branco </p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class=" product-price"> 380,00<span> BR</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="/images/products/product-7.png" alt="" />
+                        <p class="product-name">Cadeira Gamer, Master Enfield V2, Giratória Reclinável, Vermelha</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                        <p class=" product-price"> 500.00<span> BR</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener("clik", () => {
+            navbar.classList.toggle("show-menu");
+        });
+
+    </script>
 </body>
 </html>
